@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+      - name: gofmt
+        shell: bash
+        run: test -z "$(gofmt -l .)" || (gofmt -l . && exit 1)
+      # Win32 callbacks turn lParam (uintptr) into struct pointers, which unsafeptr flags by design.
+      - run: go vet -unsafeptr=false ./...
+      # Also checks that the committed .pot and .ico files match the sources.
+      - run: go test ./...
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+      - run: go vet ./cmd/selkit ./internal/cli ./internal/actions ./internal/plugin ./internal/textops ./internal/translit ./internal/i18n ./internal/config
+      - run: go test ./internal/cli ./internal/actions ./internal/plugin ./internal/textops ./internal/translit ./internal/i18n ./internal/config
+      - run: go build ./cmd/selkit

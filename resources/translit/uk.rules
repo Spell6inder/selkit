@@ -1,0 +1,99 @@
+# Ukrainian — the official system of the Cabinet of Ministers (resolution No. 55 of 27.01.2010),
+# as in international passports. Other Cyrillic letters fall back to ISO 9.
+
+name     = Ukrainian (KMU 2010)
+name.uk  = Українська (КМУ 2010)
+lang     = uk
+base     = iso9
+detect   = і ї є ґ
+priority = 1
+silent   = ' ’ ʼ `          # an apostrophe between letters is not rendered: м'ята → miata
+
+[to-latin]
+а = a
+б = b
+в = v
+г = h
+ґ = g
+д = d
+е = e
+є = ie
+^є = ye
+ж = zh
+з = z
+зг = zgh                    # to tell it from "ж": Згорани → Zghorany
+и = y
+і = i
+ї = i
+^ї = yi
+й = i
+^й = y
+к = k
+л = l
+м = m
+н = n
+о = o
+п = p
+р = r
+с = s
+т = t
+у = u
+ф = f
+х = kh
+ц = ts
+ч = ch
+ш = sh
+щ = shch
+ь =
+ю = iu
+^ю = yu
+я = ia
+^я = ya
+
+# Back to Cyrillic. The system loses "ь" and the apostrophe and writes і, ї and й alike, so this is a best guess
+# that restores ordinary words.
+[from-latin]
+^ye = є
+^yi = ї
+^yu = ю
+^ya = я
+^y = й
+ii$ = ій
+yi$ = ий
+shch = щ
+zgh = зг
+zh = ж
+kh = х
+ts = ц
+ch = ч
+sh = ш
+ie = є
+iu = ю
+ia = я
+a = а
+b = б
+v = в
+h = г
+g = ґ
+d = д
+e = е
+z = з
+y = и
+i = і
+k = к
+l = л
+m = м
+n = н
+o = о
+p = п
+r = р
+s = с
+t = т
+u = у
+f = ф
+# Letters the system does not use, written by sound.
+c = к
+q = к
+w = в
+x = кс
+j = дж

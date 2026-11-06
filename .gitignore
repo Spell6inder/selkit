@@ -1,0 +1,9 @@
+# Build output, test binaries, previews and other scratch files (see var/bin for the exe)
+/var/
+*.exe
+*.test
+/selkit
+
+# IDE
+.idea/
+.vscode/

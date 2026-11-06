@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+      - run: go test ./...
+      - name: Build
+        shell: bash
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          # Stamp the tag into the exe resources (file version) and into the program (About tab, log).
+          (cd cmd/selkit && go run github.com/Spell6inder/selkit/internal/icon/generate -version "$version")
+          mkdir -p dist
+          go build -trimpath -ldflags "-H=windowsgui -s -w -X main.version=$version" -o dist/selkit.exe ./cmd/selkit
+          cd dist
+          7z a "selkit-$version-windows-amd64.zip" selkit.exe ../LICENSE ../README.md
+          # Linux: the text menu as a command (internal/cli).
+          for arch in amd64 arm64; do
+            (cd .. && GOOS=linux GOARCH=$arch CGO_ENABLED=0 go build -trimpath -ldflags "-s -w -X main.version=$version" -o dist/linux-$arch/selkit ./cmd/selkit)
+            tar -czf "selkit-$version-linux-$arch.tar.gz" -C "linux-$arch" selkit -C ../.. LICENSE README.md
+          done
+          sha256sum selkit.exe *.zip *.tar.gz > SHA256SUMS.txt
+      - name: Publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Notes: the section of CHANGELOG.md for this version, if there is one.
+          version="${GITHUB_REF_NAME#v}"
+          awk -v head="## [$version]" 'index($0, head) == 1 {on=1; next} /^## \[/ {on=0} on' CHANGELOG.md > notes.md
+          gh release create "$GITHUB_REF_NAME" dist/selkit.exe dist/*.zip dist/*.tar.gz dist/SHA256SUMS.txt \
+            --title "Selkit $version" --notes-file notes.md

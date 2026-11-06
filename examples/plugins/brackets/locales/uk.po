@@ -1,0 +1,23 @@
+# The plugin's own translation: msgid is the English text from plugin.json.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: uk\n"
+
+msgid "Brackets"
+msgstr "Дужки"
+
+msgid "Put the text in brackets or take them off"
+msgstr "Взяти текст у дужки або прибрати їх"
+
+msgid "(Round brackets)"
+msgstr "(Круглі дужки)"
+
+msgid "[Square brackets]"
+msgstr "[Квадратні дужки]"
+
+msgid "{Curly braces}"
+msgstr "{Фігурні дужки}"
+
+msgid "Remove brackets"
+msgstr "Прибрати дужки"

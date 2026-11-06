@@ -1,0 +1,16 @@
+{
+  "name": "Brackets",
+  "description": "Put the text in brackets or take them off",
+  "commands": {
+    "windows": ["powershell", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-File", "brackets.ps1"],
+    "linux": ["sh", "brackets.sh"]
+  },
+  "timeout_ms": 5000,
+  "preview": false,
+  "actions": [
+    {"id": "round", "name": "(Round brackets)"},
+    {"id": "square", "name": "[Square brackets]"},
+    {"id": "curly", "name": "{Curly braces}"},
+    {"id": "unwrap", "name": "Remove brackets"}
+  ]
+}

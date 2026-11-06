@@ -1,0 +1,61 @@
+# ISO 9:1995 — one Latin letter (with diacritics) for every Cyrillic letter, so it can always be reversed.
+# The base for the national systems: letters they do not define are written by these rules.
+
+name         = ISO 9
+name.uk      = ISO 9 (уся кирилиця)
+reverse      = auto
+# Plain Latin is not taken as ISO 9: only text with its diacritics (combining accents included).
+detect-latin = ǵ đ ë ê ž ẑ ì ï ḱ ć ŭ č š ŝ ʺ ʹ è û â ě ǎ ỳ ̀ ̂ ̌
+
+[to-latin]
+а = a
+б = b
+в = v
+г = g
+ґ = g̀
+д = d
+ѓ = ǵ
+ђ = đ
+е = e
+ё = ë
+є = ê
+ж = ž
+з = z
+ѕ = ẑ
+и = i
+і = ì
+ї = ï
+й = j
+ј = ǰ
+к = k
+л = l
+љ = l̂
+м = m
+н = n
+њ = n̂
+о = o
+п = p
+р = r
+с = s
+т = t
+ќ = ḱ
+ћ = ć
+у = u
+ў = ŭ
+ф = f
+х = h
+ц = c
+ч = č
+џ = d̂
+ш = š
+щ = ŝ
+ъ = ʺ
+ы = y
+ь = ʹ
+э = è
+ю = û
+я = â
+ѣ = ě
+ѳ = f̀
+ѵ = ỳ
+ѫ = ǎ

@@ -1,0 +1,604 @@
+# Український переклад Selkit.
+msgid ""
+msgstr ""
+"Language: uk\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Selkit is already running — see the icon in the notification area."
+msgstr "Selkit уже запущено — іконка в треї."
+
+msgid "Could not create %s:"
+msgstr "Не вдалося створити %s:"
+
+msgid "Error in the config file, using the default settings:"
+msgstr "Помилка в конфігу, використовую типові налаштування:"
+
+msgid "Error in the translation file:"
+msgstr "Помилка у файлі перекладу:"
+
+msgid "Could not install the mouse hook:"
+msgstr "Не вдалося встановити хук миші:"
+
+msgid "mode must be uia, copy or both, not %q"
+msgstr "mode має бути uia, copy або both, а не %q"
+
+msgid "capture must be auto or hotkey, not %q"
+msgstr "capture має бути auto або hotkey, а не %q"
+
+msgid "osd must be off, change or always, not %q"
+msgstr "osd має бути off, change або always, а не %q"
+
+msgid "capture_modifier must be ctrl, shift, alt or win, not %q"
+msgstr "capture_modifier має бути ctrl, shift, alt або win, а не %q"
+
+msgid "%s must be empty, ctrl, shift, alt or win, not %q"
+msgstr "%s має бути порожнім, ctrl, shift, alt або win, а не %q"
+
+msgid "%s and %s cannot use the same modifier (%s)"
+msgstr "%s і %s не можуть мати однаковий модифікатор (%s)"
+
+msgid "Pasted"
+msgstr "Вставлено"
+
+msgid "Nothing is selected"
+msgstr "Нічого не виділено"
+
+msgid "No action to repeat yet"
+msgstr "Ще немає дії, яку можна повторити"
+
+msgid "Copied to clipboard"
+msgstr "Скопійовано в буфер"
+
+msgid "To primary"
+msgstr "В primary"
+
+msgid "To Latin"
+msgstr "Латинкою"
+
+msgid "From Latin"
+msgstr "З латинки"
+
+msgid "Latin by"
+msgstr "Латинкою за"
+
+msgid "From Latin by"
+msgstr "З латинки за"
+
+msgid "Unknown action"
+msgstr "Невідома дія"
+
+msgid "Not applicable to this text"
+msgstr "Не підходить для цього тексту"
+
+msgid "Nothing to change"
+msgstr "Нічого змінювати"
+
+msgid "Keyboard layout"
+msgstr "Розкладка"
+
+msgid "Only one keyboard layout is installed"
+msgstr "У системі лише одна розкладка"
+
+msgid "The text does not look typed in any installed layout"
+msgstr "Не схоже, що текст набрано в якійсь із розкладок"
+
+msgid "That keyboard layout is no longer installed"
+msgstr "Цієї розкладки в системі вже немає"
+
+msgid "Layout → %s"
+msgstr "Розкладка → %s"
+
+msgid "The text is already in %s"
+msgstr "Текст уже в розкладці %s"
+
+msgid "Layout %s → %s"
+msgstr "Розкладка %s → %s"
+
+msgid "Selected"
+msgstr "Виділено"
+
+msgid "Repeat: %s"
+msgstr "Повторити: %s"
+
+msgid "Layout to"
+msgstr "Розкладка в"
+
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d символ"
+msgstr[1] "%d символи"
+msgstr[2] "%d символів"
+
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d рядок"
+msgstr[1] "%d рядки"
+msgstr[2] "%d рядків"
+
+msgid "As in Windows"
+msgstr "Як у Windows"
+
+msgid "General"
+msgstr "Загальне"
+
+msgid "Enabled"
+msgstr "Увімкнено"
+
+msgid "Language (after restart)"
+msgstr "Мова (після перезапуску)"
+
+msgid "Save selection to primary"
+msgstr "Зберігати виділення в primary"
+
+msgid "After every selection"
+msgstr "Після кожного виділення"
+
+msgid "Only with a combination"
+msgstr "Лише за комбінацією"
+
+msgid "How to read the selection"
+msgstr "Як читати виділення"
+
+msgid "UI Automation, then Ctrl+C"
+msgstr "UI Automation, потім Ctrl+C"
+
+msgid "UI Automation only"
+msgstr "Лише UI Automation"
+
+msgid "Ctrl+C only"
+msgstr "Лише Ctrl+C"
+
+msgid "Catch keyboard selection (Shift+arrows, Ctrl+A)"
+msgstr "Виділення з клавіатури (Shift+стрілки, Ctrl+A)"
+
+msgid "Remove Ctrl+C hack copies from Win+V history"
+msgstr "Прибирати копіювання Ctrl+C-хаку з історії Win+V"
+
+msgid "Hint near the cursor"
+msgstr "Підказка біля курсора"
+
+msgid "Show"
+msgstr "Показувати"
+
+msgid "Never"
+msgstr "Ніколи"
+
+msgid "When primary changes"
+msgstr "Коли змінюється primary"
+
+msgid "Also after pasting"
+msgstr "Ще й після вставки"
+
+msgid "Duration, ms"
+msgstr "Тривалість, мс"
+
+msgid "Middle button with a modifier"
+msgstr "Середня кнопка з модифікатором"
+
+msgid "Paste primary"
+msgstr "Вставити primary"
+
+msgid "No modifier"
+msgstr "Без модифікатора"
+
+msgid "Save selection (combination mode)"
+msgstr "Зберегти виділення (режим комбінації)"
+
+msgid "Text menu"
+msgstr "Меню перетворень"
+
+msgid "Off"
+msgstr "Вимкнено"
+
+msgid "Repeat last action"
+msgstr "Повторити останню дію"
+
+msgid "Timings"
+msgstr "Затримки"
+
+msgid "Delay after selection, ms"
+msgstr "Пауза після виділення, мс"
+
+msgid "Ctrl+C timeout, ms"
+msgstr "Очікування Ctrl+C, мс"
+
+msgid "Paste timeout, ms"
+msgstr "Очікування вставки, мс"
+
+msgid "Restore delay, ms"
+msgstr "Пауза перед відновленням, мс"
+
+msgid "UI Automation timeout, ms (after restart)"
+msgstr "Тайм-аут UIA, мс (після перезапуску)"
+
+msgid "Diagnostics"
+msgstr "Діагностика"
+
+msgid "Write the selected text to the log"
+msgstr "Писати виділений текст у лог"
+
+msgid "Terminals (paste with Shift+Insert, no Ctrl+C)"
+msgstr "Термінали (Shift+Insert, без Ctrl+C)"
+
+msgid "Disabled in these programs"
+msgstr "Вимкнено в цих програмах"
+
+msgid "Paste only into input fields"
+msgstr "Вставляти лише в поля вводу"
+
+msgid "Copy only from input fields"
+msgstr "Копіювати лише з полів вводу"
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Open config.json"
+msgstr "Відкрити config.json"
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "enter a number of milliseconds"
+msgstr "введіть кількість мілісекунд"
+
+msgid "Could not save the settings:"
+msgstr "Не вдалося зберегти налаштування:"
+
+msgid "Case"
+msgstr "Регістр"
+
+msgid "separate words"
+msgstr "окремі слова"
+
+msgid "UPPERCASE"
+msgstr "ВЕЛИКІ"
+
+msgid "lowercase"
+msgstr "малі"
+
+msgid "Title Case"
+msgstr "Кожне Слово З Великої"
+
+msgid "Sentence case"
+msgstr "Як у реченні"
+
+msgid "iNVERT cASE"
+msgstr "іНВЕРТУВАТИ рЕГІСТР"
+
+msgid "Spaces and lines"
+msgstr "Пробіли й рядки"
+
+msgid "Collapse extra spaces"
+msgstr "Прибрати зайві пробіли"
+
+msgid "Join into one line"
+msgstr "Об'єднати в один рядок"
+
+msgid "Sort lines"
+msgstr "Сортувати рядки"
+
+msgid "Remove duplicate lines"
+msgstr "Прибрати повтори рядків"
+
+msgid "Reverse line order"
+msgstr "Рядки у зворотному порядку"
+
+msgid "Encoding"
+msgstr "Кодування"
+
+msgid "URL: encode"
+msgstr "URL: закодувати"
+
+msgid "URL: decode"
+msgstr "URL: розкодувати"
+
+msgid "Base64: encode"
+msgstr "Base64: закодувати"
+
+msgid "Base64: decode"
+msgstr "Base64: розкодувати"
+
+msgid "Catch selections and paste them with the middle button"
+msgstr "Відловлювати виділення і вставляти середньою кнопкою"
+
+msgid "What the middle button will paste"
+msgstr "Що вставить середня кнопка"
+
+msgid "Clear primary"
+msgstr "Очистити primary"
+
+msgid "The middle button works as usual again until the next selection"
+msgstr "Середня кнопка знову працюватиме як звичайно, до наступного виділення"
+
+msgid "Do not save every selection automatically, only with the combination"
+msgstr "Не зберігати кожне виділення автоматично — лише за комбінацією"
+
+msgid "Show what got into primary"
+msgstr "Показувати, що потрапило в primary"
+
+msgid "A short hint near the cursor after every save"
+msgstr "Коротка підказка біля курсора після кожного збереження"
+
+msgid "Keyboard layout, case, transliteration and more for the selected text"
+msgstr "Розкладка, регістр, латинка тощо для виділеного тексту"
+
+msgid "Settings…"
+msgstr "Налаштування…"
+
+msgid "Start with Windows"
+msgstr "Запускати з Windows"
+
+msgid "Open log"
+msgstr "Відкрити лог"
+
+msgid "Exit"
+msgstr "Вихід"
+
+msgid "Error in the config file, keeping the previous settings:"
+msgstr "Помилка в конфігу, лишаю попередні налаштування:"
+
+msgid "Could not change autostart:"
+msgstr "Не вдалося змінити автозапуск:"
+
+msgid "Save only with %s+middle button"
+msgstr "Зберігати лише за %s+середньою"
+
+msgid "Text menu with %s+middle button"
+msgstr "Меню перетворень за %s+середньою"
+
+msgid "Primary: (empty)"
+msgstr "Primary: (порожньо)"
+
+msgid "Mouse"
+msgstr "Миша"
+
+msgid "Programs"
+msgstr "Програми"
+
+msgid "Advanced"
+msgstr "Додатково"
+
+msgid "About"
+msgstr "Про програму"
+
+msgid "Each modifier can do only one thing. Windows itself has no middle-button shortcuts, but browsers open links in new tabs with Ctrl and Shift. In programs from the “Paste only into input fields” list such a click goes to the program when the cursor is over a link or nothing is selected. Alt and Win clash with programs least often."
+msgstr "Кожен модифікатор робить щось одне. У самої Windows комбінацій із середньою кнопкою немає, але браузери з Ctrl і Shift відкривають посилання в нових вкладках. У програмах зі списку «Вставляти лише в поля вводу» такий клік дістається програмі, коли курсор над посиланням або нічого не виділено. Alt і Win найрідше перетинаються з програмами."
+
+msgid "Add running…"
+msgstr "Із запущених…"
+
+msgid "No programs with windows found"
+msgstr "Не знайдено програм із вікнами"
+
+msgid "Version %s"
+msgstr "Версія %s"
+
+msgid "Tools for selected text on the middle mouse button: paste it Linux-style without touching the clipboard, fix the keyboard layout, change case, transliterate and more."
+msgstr "Інструменти для виділеного тексту на середній кнопці миші: вставка як у Linux без буфера обміну, виправлення розкладки, зміна регістру, транслітерація тощо."
+
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+msgid "Program:"
+msgstr "Програма:"
+
+msgid "Show in folder"
+msgstr "Показати в теці"
+
+msgid "Settings, log and own translations:"
+msgstr "Налаштування, лог і власні переклади:"
+
+msgid "Open folder"
+msgstr "Відкрити теку"
+
+msgid "No clipboard tool found: install wl-clipboard (Wayland), xclip or xsel"
+msgstr "Немає програми для буфера обміну: установіть wl-clipboard (Wayland), xclip або xsel"
+
+msgid "No typing tool found: install wtype (Wayland) or xdotool (X11)"
+msgstr "Немає програми для введення тексту: установіть wtype (Wayland) або xdotool (X11)"
+
+msgid "No menu program found: install fuzzel, wofi, rofi, bemenu, dmenu, zenity or fzf"
+msgstr "Немає програми для меню: установіть fuzzel, wofi, rofi, bemenu, dmenu, zenity або fzf"
+
+msgid "The plugin is not installed or is turned off"
+msgstr "Плагін не встановлено або вимкнено"
+
+msgid "no answer in %v"
+msgstr "немає відповіді за %v"
+
+msgid "Plugins"
+msgstr "Плагіни"
+
+msgid "No plugins installed. A plugin is a folder with plugin.json in the plugins folder; it gets the selected text and returns the result. See docs/plugins.md."
+msgstr "Плагінів немає. Плагін — це папка з plugin.json у папці плагінів; він отримує виділений текст і повертає результат. Див. docs/uk/plugins.md."
+
+msgid "Not loaded:"
+msgstr "Не завантажено:"
+
+msgid "Open plugins folder"
+msgstr "Відкрити папку плагінів"
+
+msgid "Preview in menu"
+msgstr "Прев'ю в меню"
+
+msgid "No plugins in %s"
+msgstr "Немає плагінів у %s"
+
+msgid "Unknown plugin: %s"
+msgstr "Невідомий плагін: %s"
+
+msgid "enabled"
+msgstr "увімкнено"
+
+msgid "disabled"
+msgstr "вимкнено"
+
+msgid "preview"
+msgstr "прев'ю"
+
+msgid "no preview"
+msgstr "без прев'ю"
+
+msgid "No shortcut for %s"
+msgstr "Немає клавіші для %s"
+
+msgid "Shortcut removed: %s"
+msgstr "Клавішу прибрано: %s"
+
+msgid "%s now runs: %s"
+msgstr "%s тепер запускає: %s"
+
+msgid "Add this to the %s configuration:"
+msgstr "Додайте це в конфігурацію %s:"
+
+msgid "Selkit cannot assign keys on this desktop. In its keyboard settings, assign this to a key:"
+msgstr "На цьому робочому столі Selkit не може призначати клавіші. У його налаштуваннях клавіатури призначте:"
+
+msgid "Unknown key: %s"
+msgstr "Невідома клавіша: %s"
+
+msgid "A letter or digit also needs Ctrl, Alt or Meta, or typing it would run the command: %s"
+msgstr "До літери чи цифри потрібен ще Ctrl, Alt або Meta, бо інакше команда запускатиметься під час набору: %s"
+
+msgid "dbus-send is needed: install the D-Bus tools"
+msgstr "Потрібен dbus-send: установіть інструменти D-Bus"
+
+msgid "kbuildsycoca6 not found"
+msgstr "Не знайдено kbuildsycoca6"
+
+msgid "%s is already used by %s"
+msgstr "%s уже зайнято: %s"
+
+msgid "KDE did not take the shortcut %s"
+msgstr "KDE не прийняв клавішу %s"
+
+msgid "xfconf-query not found"
+msgstr "Не знайдено xfconf-query"
+
+msgid "Text not replaced: the result is in the clipboard, paste it with Ctrl+V"
+msgstr "Текст не замінено: результат у буфері, вставте його через Ctrl+V"
+
+msgid "Selkit assigns no keys on this desktop: remove them where you added them."
+msgstr "На цьому робочому столі Selkit не призначає клавіш: приберіть їх там, де додавали."
+
+msgid "Settings, rules and plugins stay in %s; delete that folder to remove them too."
+msgstr "Налаштування, правила й плагіни лишаються в %s; щоб прибрати і їх, видаліть цю папку."
+
+msgid "Repeat the last action"
+msgstr "Повторити останню дію"
+
+msgid "One key for both the menu and repeat: %s"
+msgstr "Одна клавіша і на меню, і на повтор: %s"
+
+msgid "Selkit assigns no keys on this desktop: see what you added in its keyboard settings."
+msgstr "На цьому робочому столі Selkit не призначає клавіш: подивіться додане в його налаштуваннях клавіатури."
+
+msgid "no key"
+msgstr "немає клавіші"
+
+msgid "No keyboard settings known for this desktop"
+msgstr "Для цього робочого столу не відомо налаштувань клавіатури"
+
+msgid "gsettings not found"
+msgstr "Не знайдено gsettings"
+
+msgid "Quotes"
+msgstr "Лапки"
+
+msgid "«Guillemets»"
+msgstr "«Ялинки»"
+
+msgid "“Curly quotes”"
+msgstr "“Лапки-коми”"
+
+msgid "\"Straight quotes\""
+msgstr "\"Прямі лапки\""
+
+msgid "`Backticks`"
+msgstr "`Зворотні апострофи`"
+
+msgid "Remove quotes"
+msgstr "Прибрати лапки"
+
+msgid "Latin script and back, by several systems"
+msgstr "Латинкою й назад, за кількома системами"
+
+msgid "URL and Base64: encode and decode"
+msgstr "URL і Base64: закодувати й розкодувати"
+
+msgid "Put the text in quotes or take them off"
+msgstr "Взяти текст у лапки або прибрати їх"
+
+msgid "built-in"
+msgstr "вбудований"
+
+msgid "the name of a built-in module"
+msgstr "це назва вбудованого модуля"
+
+msgid "%s is built in and always shows a preview"
+msgstr "%s вбудований і завжди показує прев'ю"
+
+msgid "Transliteration"
+msgstr "Транслітерація"
+
+msgid "Install from a folder, a zip file or GitHub (github.com/owner/repo):"
+msgstr "Встановити з папки, zip-файла або GitHub (github.com/власник/репозиторій):"
+
+msgid "Check for updates"
+msgstr "Перевірити оновлення"
+
+msgid "Install"
+msgstr "Встановити"
+
+msgid "Enter a folder, a zip file, a link to one, or github.com/owner/repo."
+msgstr "Вкажіть папку, zip-файл, посилання на нього або github.com/власник/репозиторій."
+
+msgid "Could not install the plugin:"
+msgstr "Не вдалося встановити плагін:"
+
+msgid "%s is the name of a built-in module: rename the plugin folder"
+msgstr "%s — це назва вбудованого модуля: перейменуйте папку плагіна"
+
+msgid "%s is the name of a built-in module: choose another with --name"
+msgstr "%s — це назва вбудованого модуля: виберіть іншу через --name"
+
+msgid "Install this plugin?"
+msgstr "Встановити цей плагін?"
+
+msgid "Installed: %s"
+msgstr "Встановлено: %s"
+
+msgid "It is in the menu already; reopen the settings to see it in this list."
+msgstr "Він уже є в меню; щоб побачити його в цьому списку, відкрийте налаштування знову."
+
+msgid "No updates"
+msgstr "Оновлень немає"
+
+msgid "Update?"
+msgstr "Оновити?"
+
+msgid "Updated: %s"
+msgstr "Оновлено: %s"
+
+msgid "Source:"
+msgstr "Джерело:"
+
+msgid "Runs:"
+msgstr "Запускає:"
+
+msgid "Actions:"
+msgstr "Дії:"
+
+msgid "Remove the plugin %s?"
+msgstr "Видалити плагін %s?"
+
+msgid "Removed: %s"
+msgstr "Видалено: %s"
+
+msgid "Not asked without a terminal: add --yes"
+msgstr "Без термінала питати нікого: додайте --yes"
